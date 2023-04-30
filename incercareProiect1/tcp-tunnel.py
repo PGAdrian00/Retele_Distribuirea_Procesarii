@@ -6,6 +6,7 @@ SERVERHOSTIP='127.0.0.1'#adresa loopback
 
 
 
+
 def handle_client(client_socket, client):
     with client:
         while True:
