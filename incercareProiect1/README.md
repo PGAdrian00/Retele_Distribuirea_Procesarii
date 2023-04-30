@@ -15,5 +15,6 @@ toti clientii activi;
 **Abodare** - modul in care voi incerca sa rezolv pasii proiectului enuntat mai sus
 
 - conexiune o voi face de tip tcp
-- voi implementa si tcp tunneling? Trebuie sa vad cum rezolv de la 3 - 6
+- voi implementa si tcp tunneling; din modul in care sunt formulate 2 si 3 trebuie tcp tunneling
+
 

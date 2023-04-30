@@ -1,4 +1,4 @@
 # _TODO List_
 
-- Imbunatatire afisare lista conexiuni, sa fac cumva cu o comanda daca scriu list sa imi afiseze
-- Restul proiectului:))))
+- Vezi la handle_client joaca te pe acolo sa vezi ca functioneaza 
+- Gaseste o functionabilitate si cum sa faci restul task urilor

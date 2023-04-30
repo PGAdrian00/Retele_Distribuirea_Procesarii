@@ -8,7 +8,7 @@ PORT = 12345 #un port din cele disponibile pt customizat (>1023, 1023 de porturi
 is_running = True
 
 
-def handle_client(client):
+def handle_client(client, addr):
     with client:
         while True:
             if client == None:
@@ -17,6 +17,7 @@ def handle_client(client):
             data = client.recv(1024)
             print(f"USER[{host},{port}] sent : {data}")
             if not data:
+                clients.remove(addr)
                 print(f'[USER{host},{port}] bye')
                 break
             client.sendall(data.capitalize())
@@ -30,7 +31,7 @@ def accept(server):
         for clientLista in clients:
             print(f'[CLIENTS_CONNECTION_LIST]: {clientLista}')
         print(f"[NEW CONNECTION] {addr} has connected!")
-        client_thread = threading.Thread(target=handle_client, args=(client,))
+        client_thread = threading.Thread(target=handle_client, args=(client, addr))
         client_thread.start()
 
 def main():
