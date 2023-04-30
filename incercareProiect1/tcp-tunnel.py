@@ -22,7 +22,6 @@ def handle_client(client_socket, client):
                 client.sendall(dest_res)
 
 
-
 clients = []
 is_running = True
 def process_connection(server_socket,client_socket):

@@ -4,7 +4,6 @@ import threading
 SERVERHOSTIP = '127.0.0.1' #cea mai utilizata adresa de loopback
 PORT = 12345 #un port din cele disponibile pt customizat (>1023, 1023 de porturi sunt default, ex: 80 http, 443 https, 21 ftp, 22 ftps ,445 smb,.....)
 
-
 is_running = True
 
 
@@ -54,3 +53,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
